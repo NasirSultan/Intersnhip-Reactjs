@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 
+
 const Hotels = () => {
   return (
     <>
@@ -21,42 +22,48 @@ const Hotels = () => {
       </div>
 
       <div className="container m-5 p-5">
-        <div className="row p-3">
-          <div className="col-lg-4 text-center">
-            {/* Icon instead of image */}
-            <i className="fas fa-hotel fa-5x text-primary mb-3"></i>
-            <h2 className="fw-normal">Heading</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-          </div>
-          <div className="col-lg-4 text-center">
-            <i className="fas fa-swimmer fa-5x text-primary mb-3"></i>
-            <h2 className="fw-normal">Heading</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-          </div>
-          <div className="col-lg-4 text-center">
-            <i className="fas fa-utensils fa-5x text-primary mb-3"></i>
-            <h2 className="fw-normal">Heading</h2>
-            <p>And lastly this, the third column of representative placeholder content.</p>
-          </div>
+      <div className="row p-3">
+        <div className="col-lg-4 text-center hover-effect">
+          {/* Icon instead of image */}
+          <i className="fas fa-hotel fa-5x text-primary mb-3"></i>
+          <h2 className="fw-normal">Heading</h2>
+          <p>
+            Some representative placeholder content for the three columns of text below the carousel. This is the first column.
+          </p>
         </div>
-
-        <div className="row p-3">
-          <div className="col-lg-4 text-center">
-            <i className="fas fa-hotel fa-5x text-primary mb-3"></i>
-            <h2 className="fw-normal">Heading</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-          </div>
-          <div className="col-lg-4 text-center">
-            <i className="fas fa-swimmer fa-5x text-primary mb-3"></i>
-            <h2 className="fw-normal">Heading</h2>
-          </div>
-          <div className="col-lg-4 text-center">
-            <i className="fas fa-utensils fa-5x text-primary mb-3"></i>
-            <h2 className="fw-normal">Heading</h2>
-            <p>And lastly this, the third column of representative placeholder content.</p>
-          </div>
+        <div className="col-lg-4 text-center hover-effect">
+          <i className="fas fa-swimmer fa-5x text-primary mb-3"></i>
+          <h2 className="fw-normal">Heading</h2>
+          <p>
+            Some representative placeholder content for the three columns of text below the carousel. This is the first column.
+          </p>
+        </div>
+        <div className="col-lg-4 text-center hover-effect">
+          <i className="fas fa-utensils fa-5x text-primary mb-3"></i>
+          <h2 className="fw-normal">Heading</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
         </div>
       </div>
+
+      <div className="row p-3">
+        <div className="col-lg-4 text-center hover-effect">
+          <i className="fas fa-hotel fa-5x text-primary mb-3"></i>
+          <h2 className="fw-normal">Heading</h2>
+          <p>
+            Some representative placeholder content for the three columns of text below the carousel. This is the first column.
+          </p>
+        </div>
+        <div className="col-lg-4 text-center hover-effect">
+          <i className="fas fa-swimmer fa-5x text-primary mb-3"></i>
+          <h2 className="fw-normal">Heading</h2>
+        </div>
+        <div className="col-lg-4 text-center hover-effect">
+          <i className="fas fa-utensils fa-5x text-primary mb-3"></i>
+          <h2 className="fw-normal">Heading</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
+        </div>
+      </div>
+    </div>
 
       <div className="container m-5 p-5">
         <div className="row featurette">
@@ -126,15 +133,14 @@ const Hotels = () => {
       <div
 
         style={{
-
-          background: 'linear-gradient(to bottom,rgb(132, 136, 167) 50%,rgb(48, 70, 109) 50%)',
+          background: "linear-gradient(to bottom, rgb(251, 251, 251), rgb(137, 136, 136),rgb(8, 8, 8))", // Gradient colors
         }}
       >
-        <div className="container">
+        <div className="container"  >
 
           <div class="p-5 text-center ">
             <div class="container py-2">
-              <h1 className="text-white text-4xl font-bold b p-4">
+              <h1 className="text-black text-4xl font-bold b p-4">
                 Full-width jumbotron
               </h1>
 

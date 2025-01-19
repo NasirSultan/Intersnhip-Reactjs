@@ -54,7 +54,7 @@ const Home = () => {
         <div className="row featurette">
           <div className="col-md-7 order-md-2 d-flex flex-column justify-content-center align-items-center">
             <h2 className="featurette-heading fw-normal lh-1 text-center">
-              Oh yeah, it’s that good. <span className="text-body-secondary">See for yourself.</span>
+              Oh yeah, its that good. <span className="text-body-secondary">See for yourself.</span>
             </h2>
             <p className="lead text-center">
               Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.
@@ -130,7 +130,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div style={{ backgroundColor: 'lightblue' }}>
+      <div class="grad "   style={{
+          background: "linear-gradient(to bottom, #ff7e5f,rgb(255, 255, 255))", // Gradient colors
+        }} >
 
         <div class="p-5 text-center ">
           <div class="container py-5">

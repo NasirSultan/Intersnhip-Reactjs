@@ -69,3 +69,30 @@
 .col-md-10 .pt-4 {
   margin-top: 20px;
 }
+/* Hover effect for the entire column */
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow */
+}
+
+.hover-effect:hover {
+  transform: translateY(-10px); /* Slightly lift the column */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Hover effect for the icons */
+.hover-effect i {
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.hover-effect:hover i {
+  transform: scale(1.2); /* Scale up the icon slightly on hover */
+}
+
+/* Optional: Smooth transition for text */
+.hover-effect h2, .hover-effect p {
+  transition: color 0.3s ease;
+}
+
+.hover-effect:hover h2, .hover-effect:hover p {
+  color: #007bff; /* Change color of heading and text on hover */
+}
