@@ -7,6 +7,8 @@ const Home = () => {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+  
+
 
   return (
     <>
@@ -130,9 +132,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div class="grad "   style={{
-          background: "linear-gradient(to bottom, #ff7e5f,rgb(255, 255, 255))", // Gradient colors
-        }} >
+      <div class="grad " style={{
+        background: "linear-gradient(to bottom, #ff7e5f,rgb(255, 255, 255))", // Gradient colors
+      }} >
 
         <div class="p-5 text-center ">
           <div class="container py-5">

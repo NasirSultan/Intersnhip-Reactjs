@@ -29,6 +29,7 @@
   opacity: 1;
   transform: translateY(0);
 }
+
 /* Animation for fade-up effect */
 @keyframes fadeUp {
   from {
@@ -69,9 +70,10 @@
 .col-md-10 .pt-4 {
   margin-top: 20px;
 }
+
 /* Hover effect for the entire column */
 .hover-effect {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease; /* Smooth transform, shadow, and margin */
 }
 
 .hover-effect:hover {
@@ -95,4 +97,189 @@
 
 .hover-effect:hover h2, .hover-effect:hover p {
   color: #007bff; /* Change color of heading and text on hover */
+}
+
+/* Style for hover effect on cards */
+.hover-effect:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style for card shadow effect on hover */
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style for Section Header */
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for paragraph text */
+p {
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Adding smooth transition for background change */
+.container {
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Left/Right animation for hover */
+.left-right-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow */
+}
+
+.left-right-effect:hover {
+  transform: translateX(15px); /* Move the element to the right */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.left-right-effect.left {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow */
+}
+
+.left-right-effect.left:hover {
+  transform: translateX(-15px); /* Move the element to the left */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Hover effect for icon with left-right animation */
+.left-right-effect i {
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.left-right-effect:hover i {
+  transform: scale(1.2); /* Scale up the icon slightly on hover */
+}
+
+
+/* General Container */
+.section {
+  background-color: #f8f9fa; /* light background */
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Heading Style */
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for Slide-In from Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation for Slide-In from Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Add Animation to Sections */
+.aos-init {
+  opacity: 0;
+}
+
+.aos-animate {
+  opacity: 1;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+/* Apply slide in from left for even-indexed items */
+.aos-init[data-aos="fade-up"].left-to-right {
+  animation-name: slideInLeft;
+}
+
+/* Apply slide in from right for odd-indexed items */
+.aos-init[data-aos="fade-up"].right-to-left {
+  animation-name: slideInRight;
+}
+
+/* Hover Effect for Icons and Content */
+.ftco-img-flaticon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ftco-img-flaticon:hover {
+  transform: scale(1.1); /* Scale up slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect for Text */
+.ftco-img-flaticon h3, .ftco-img-flaticon p {
+  transition: color 0.3s ease;
+}
+
+.ftco-img-flaticon:hover h3,
+.ftco-img-flaticon:hover p {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Scroll Effects */
+.scroll-effect {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Parallax effect or move elements up as user scrolls */
+.parallax {
+  position: relative;
+  transform: translateY(0);
+  will-change: transform;
+}
+
+.parallax-move-up {
+  transition: transform 0.5s ease;
+}
+
+.parallax-effect {
+  transform: translateY(-50px); /* Example: moves elements up */
+}
+
+/* Adjusting elements based on scroll position (for smoother effects) */
+.parallax-element {
+  transition: transform 0.2s ease-out;
+}
+
+/* Hover effect for icons */
+.ftco-img-flaticon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ftco-img-flaticon:hover {
+  transform: scale(1.1); /* Scale up slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for cards hover effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }

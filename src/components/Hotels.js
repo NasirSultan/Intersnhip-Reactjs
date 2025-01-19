@@ -131,150 +131,133 @@ const Hotels = () => {
       </div>
 
       <div
-
-        style={{
-          background: "linear-gradient(to bottom, rgb(251, 251, 251), rgb(137, 136, 136),rgb(8, 8, 8))", // Gradient colors
-        }}
-      >
-        <div className="container"  >
-
-          <div class="p-5 text-center ">
-            <div class="container py-2">
-              <h1 className="text-black text-4xl font-bold b p-4">
-                Full-width jumbotron
-              </h1>
-
-              <p class="col-lg-8 mx-auto lead">
-                This takes the basic jumbotron above and makes its background edge-to-edge with a <code>.container</code> inside to align content. Similar to above, it's been recreated with built-in grid and utility classes.
-              </p>
-            </div>
+      style={{
+        background: "linear-gradient(to bottom, rgb(251, 251, 251), rgb(137, 136, 136), rgb(8, 8, 8))",
+      }}
+    >
+      <div className="container">
+        <div className="p-5 text-center">
+          <div className="container py-2">
+            <h1 className="text-black text-4xl font-bold p-4">Full-width jumbotron</h1>
+            <p className="col-lg-8 mx-auto lead">
+              This takes the basic jumbotron above and makes its background edge-to-edge with a <code>.container</code> inside to align content. Similar to above, it's been recreated with built-in grid and utility classes.
+            </p>
           </div>
+        </div>
 
-          <div class="container py-5">
-            <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQfJpTT8rz8LQ5KV_6rYS314oP8P3oa5CnA&s"
-                    className="d-block w-100"
-                    alt="First slide"
-                    style={{ width: '70%', height: '70%', padding: '10px', margin: '15px' }}
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="https://images2.bovpg.net/r/media/1/3/1/4/5/314508.jpg"
-                    className="d-block w-100"
-                    alt="Second slide"
-                    style={{ width: '70%', height: '70%', padding: '10px', margin: '15px' }}
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDLFGW8y7XJlseJcUt4ws_wbt3DBuojjugPmtutUAGluylN2IQfqxA9_6VoIYoZ30bSM&usqp=CAU"
-                    className="d-block w-100"
-                    alt="Third slide"
-                    style={{ width: '70%', height: '70%', padding: '10px', margin: '15px' }}
-                  />
-                </div>
+        {/* Carousel */}
+        <div className="container py-5">
+          <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQfJpTT8rz8LQ5KV_6rYS314oP8P3oa5CnA&s"
+                  className="d-block w-100"
+                  alt="First slide"
+                  style={{ width: '70%', height: '70%', padding: '10px', margin: '15px' }}
+                />
               </div>
-
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide="prev"
-              >
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide="next"
-              >
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-
-
-          {/* Section Header */}
-          <div className="row justify-content-center text-center mb-5 m-5 p-3 ">
-            <div className="col-md-8">
-              <h2 className="heading aos-init aos-animate text-white" data-aos="fade-up ">Experience Once In Your Lifetime</h2>
-              <p className="lead aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-              </p>
-            </div>
-          </div>
-
-          {/* Features */}
-          <div className="row p-5">
-            {/* Feature 1 */}
-            <div className="col-md-6 col-lg-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhg3gMYbklo72Rmul3aeoHN3_BdpCOew3hf8R_i1po2KnikKrmqYRPzx57f8VGm0Rw6g&usqp=CAU"
-                    className="card-img-top"
-                    alt="Thumbnail"
-                    width="300"  // fixed width in pixels
-                    height="225" // fixed height in pixels
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">February 26, 2018</h5>
-
-                  </div>
-                </div>
+              <div className="carousel-item">
+                <img
+                  src="https://images2.bovpg.net/r/media/1/3/1/4/5/314508.jpg"
+                  className="d-block w-100"
+                  alt="Second slide"
+                  style={{ width: '70%', height: '70%', padding: '10px', margin: '15px' }}
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDLFGW8y7XJlseJcUt4ws_wbt3DBuojjugPmtutUAGluylN2IQfqxA9_6VoIYoZ30bSM&usqp=CAU"
+                  className="d-block w-100"
+                  alt="Third slide"
+                  style={{ width: '70%', height: '70%', padding: '10px', margin: '15px' }}
+                />
               </div>
             </div>
 
-            {/* Feature 2 */}
-            <div className="col-md-6 col-lg-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhg3gMYbklo72Rmul3aeoHN3_BdpCOew3hf8R_i1po2KnikKrmqYRPzx57f8VGm0Rw6g&usqp=CAU"
-                    className="card-img-top"
-                    alt="Thumbnail"
-                    width="300"  // fixed width in pixels
-                    height="225" // fixed height in pixels
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">February 26, 2018</h5>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
 
-                  </div>
-                </div>
+        {/* Section Header */}
+        <div className="row justify-content-center text-center mb-5 m-5 p-3">
+          <div className="col-md-8">
+            <h2 className="heading text-white">Experience Once In Your Lifetime</h2>
+            <p className="lead">
+              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+            </p>
+          </div>
+        </div>
+
+        {/* Features */}
+        <div className="row p-5">
+          {/* Feature 1 */}
+          <div className="col-md-6 col-lg-4 mb-4 hover-effect">
+            <div className="card shadow-sm">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhg3gMYbklo72Rmul3aeoHN3_BdpCOew3hf8R_i1po2KnikKrmqYRPzx57f8VGm0Rw6g&usqp=CAU"
+                className="card-img-top"
+                alt="Thumbnail"
+                width="300" // fixed width in pixels
+                height="225" // fixed height in pixels
+              />
+              <div className="card-body">
+                <h5 className="card-title">February 26, 2018</h5>
               </div>
             </div>
-            {/* Feature 3 */}
-            <div className="col-md-6 col-lg-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhg3gMYbklo72Rmul3aeoHN3_BdpCOew3hf8R_i1po2KnikKrmqYRPzx57f8VGm0Rw6g&usqp=CAU"
-                    className="card-img-top"
-                    alt="Thumbnail"
-                    width="300"  // fixed width in pixels
-                    height="225" // fixed height in pixels
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">February 26, 2018</h5>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Additional features follow... */}
           </div>
 
+          {/* Feature 2 */}
+          <div className="col-md-6 col-lg-4 mb-4 hover-effect">
+            <div className="card shadow-sm">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhg3gMYbklo72Rmul3aeoHN3_BdpCOew3hf8R_i1po2KnikKrmqYRPzx57f8VGm0Rw6g&usqp=CAU"
+                className="card-img-top"
+                alt="Thumbnail"
+                width="300" // fixed width in pixels
+                height="225" // fixed height in pixels
+              />
+              <div className="card-body">
+                <h5 className="card-title">February 26, 2018</h5>
+              </div>
+            </div>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="col-md-6 col-lg-4 mb-4 hover-effect">
+            <div className="card shadow-sm">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhg3gMYbklo72Rmul3aeoHN3_BdpCOew3hf8R_i1po2KnikKrmqYRPzx57f8VGm0Rw6g&usqp=CAU"
+                className="card-img-top"
+                alt="Thumbnail"
+                width="300" // fixed width in pixels
+                height="225" // fixed height in pixels
+              />
+              <div className="card-body">
+                <h5 className="card-title">February 26, 2018</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
+    </div>
     </>
   );
 };
