@@ -132,7 +132,7 @@ const Hotels = () => {
 
       <div
       style={{
-        background: "linear-gradient(to bottom, rgb(251, 251, 251), rgb(137, 136, 136), rgb(8, 8, 8))",
+        background: "linear-gradient(to bottom, rgb(251, 251, 251), rgb(101, 101, 101), rgb(250, 248, 248))",
       }}
     >
       <div className="container">
@@ -219,7 +219,7 @@ const Hotels = () => {
                 height="225" // fixed height in pixels
               />
               <div className="card-body">
-                <h5 className="card-title">February 26, 2018</h5>
+                <h5 className="card-title">Five Reasons to Stay at Villa Resort</h5>
               </div>
             </div>
           </div>
@@ -235,7 +235,7 @@ const Hotels = () => {
                 height="225" // fixed height in pixels
               />
               <div className="card-body">
-                <h5 className="card-title">February 26, 2018</h5>
+                <h5 className="card-title">Five Reasons to Stay at Villa Resort</h5>
               </div>
             </div>
           </div>
@@ -251,7 +251,7 @@ const Hotels = () => {
                 height="225" // fixed height in pixels
               />
               <div className="card-body">
-                <h5 className="card-title">February 26, 2018</h5>
+                <h5 className="card-title">Five Reasons to Stay at Villa Resort</h5>
               </div>
             </div>
           </div>
