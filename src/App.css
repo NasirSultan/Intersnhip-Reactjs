@@ -45,7 +45,7 @@
 /* Apply fade-up animation to elements when they are in view */
 .fade-up {
   opacity: 0;
-  animation: fadeUp 1s forwards;
+  animation: fadeUp 2s forwards;
 }
 
 .fade-up-visible {
@@ -78,7 +78,7 @@
 
 .hover-effect:hover {
   transform: translateY(-10px); /* Slightly lift the column */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  /* Add shadow on hover */
 }
 
 /* Hover effect for the icons */

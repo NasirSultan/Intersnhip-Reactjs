@@ -90,8 +90,8 @@ const Home = () => {
           {/* Section Header */}
           <div className="row justify-content-center text-center mb-5">
             <div className="col-md-8">
-              <h2 className="heading aos-init aos-animate" data-aos="fade-up">Experience Once In Your Lifetime</h2>
-              <p className="lead aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <h2 className="heading aos-init aos-animate text-black" data-aos="fade-up">Experience Once In Your Lifetime</h2>
+              <p className="lead aos-init aos-animate text-black" data-aos="fade-up" data-aos-delay="100">
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
               </p>
             </div>
@@ -104,7 +104,7 @@ const Home = () => {
               <div className="d-block ftco-img-flaticon text-center">
                 <i className="fa fa-utensils fa-3x mb-4" style={{ color: '#000', display: 'block', margin: '0 auto' }}></i>
                 <h3>Good Foods</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p class="text-black">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
             </div>
 
@@ -113,7 +113,7 @@ const Home = () => {
               <div className="d-block ftco-img-flaticon text-center">
                 <i className="fa fa-globe fa-3x mb-4" style={{ color: '#000', display: 'block', margin: '0 auto' }}></i>
                 <h3>Travel Anywhere</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p class="text-black">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
             </div>
 
@@ -122,7 +122,7 @@ const Home = () => {
               <div className="d-block ftco-img-flaticon text-center">
                 <i className="fa fa-plane fa-3x mb-4" style={{ color: '#000', display: 'block', margin: '0 auto' }}></i>
                 <h3>Airplane</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p class="text-black">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
             </div>
 
@@ -133,7 +133,7 @@ const Home = () => {
       </div>
 
       <div class="grad " style={{
-        background: "linear-gradient(to bottom, #ff7e5f,rgb(255, 255, 255))", // Gradient colors
+        background: "linear-gradient(to bottom,rgb(213, 208, 207),rgb(255, 253, 253))", // Gradient colors
       }} >
 
         <div class="p-5 text-center ">
@@ -218,8 +218,8 @@ const Home = () => {
                   />
                   <div class="card-body">
                     <h5 class="card-title">February 26, 2018</h5>
-                    <p class="card-text">45 Best Places To Unwind</p>
-                    <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class=" text-black">45 Best Places To Unwind</p>
+                    <p class="text-black">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                   </div>
                 </div>
               </div>
@@ -237,8 +237,8 @@ const Home = () => {
 
                   <div class="card-body">
                     <h5 class="card-title">February 26, 2018</h5>
-                    <p class="card-text">45 Best Places To Unwind</p>
-                    <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class=" text-black">45 Best Places To Unwind</p>
+                    <p class=" text-black">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                   </div>
                 </div>
               </div>
@@ -254,8 +254,8 @@ const Home = () => {
                   />
                   <div class="card-body">
                     <h5 class="card-title">February 26, 2018</h5>
-                    <p class="card-text">45 Best Places To Unwind</p>
-                    <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class=" text-black">45 Best Places To Unwind</p>
+                    <p class=" text-black">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                   </div>
                 </div>
               </div>
