@@ -11,336 +11,113 @@ const News = () => {
       once: true, // Whether animation should happen only once
     });
   }, []);
+
   return (
     <>
+      {/* Hero Section */}
       <div
-        className="h-screen relative"
+        className="relative h-[600px] bg-cover bg-center"
         style={{
           backgroundImage:
             'url(https://media.gadventures.com/media-server/cache/48/50/4850d7b3b1aacc51b6a0182de9ea2c35.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center ',
-          height: '600px',
         }}
       >
-
-
         <Header />
-        <div className=" top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center" data-aos="fade-up" style={{ marginTop: "150px" }}>
-          <h1
-            className="text-white text-5xl font-bold mb-4 hover:text-yellow-400 hover:scale-110 transition-all duration-300"
-            style={{ fontSize: "80px", fontWeight: "bold", fontWeight: "900" }}
-          >
-            Blog
+        <div
+  className="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+  data-aos="fade-up"
+  style={{ marginTop: "100px" }}
+>
+          <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 hover:text-yellow-400 hover:scale-110 transition-all duration-300"  >
+            News
           </h1>
-          <p
-            className="text-white text-xl font-bold hover:text-gray-300 transition-all duration-300"
-          >
+          <p className="text-white text-lg sm:text-xl font-medium hover:text-gray-300 transition-all duration-300">
             A free template by Colorlib. Download and share!
           </p>
         </div>
       </div>
 
-
-      {/* //hero section */}
-      <div class="container mt-5  ">
-        <div class="row mb-3 text-center">
-          <div class="col-sm-8 themed-grid-col">
-            <div class="row mb-3 text-center">
-              <div class="col-sm-6  themed-grid-col"><div className="card shadow-sm" style={{ border: 'none', overflow: 'hidden' }}>
-                <img
-                  src="https://c4.wallpaperflare.com/wallpaper/485/860/1017/photo-taken-on-brown-terrain-wallpaper-preview.jpg"
-                  className="card-img-top"
-                  alt="Vince Richardson"
-                  style={{ width: '100%', height: '300px' }}
-                />
-                <div className="media-body mt-3 mb-3 text-center">
-                  <span className="meta-post" style={{ fontSize: '14px', color: 'gray' }}>February 26, 2018</span>
-                  <h2 className="mt-2">
-                    <button
-                      style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                        fontWeight: 'bold',
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                      }}
-                    >
-                      Free Template by Colorlib
-                    </button>
-                  </h2>
+      {/* Main Content */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="flex flex-wrap -mx-3">
+          {/* Main Section */}
+          <div className="w-full lg:w-8/12 px-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {[...Array(4)].map((_, index) => (
+                <div key={index} className="card shadow-sm overflow-hidden">
+                  <img
+                    src="https://c4.wallpaperflare.com/wallpaper/485/860/1017/photo-taken-on-brown-terrain-wallpaper-preview.jpg"
+                    alt="News"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <span className="text-sm text-gray-500">February 26, 2018</span>
+                    <h2 className="mt-2 font-bold text-lg">
+                      <button className="hover:text-yellow-500 transition-all duration-200">
+                        Free Template by Colorlib
+                      </button>
+                    </h2>
+                  </div>
                 </div>
-              </div>
-              </div>
-              <div class="col-6  themed-grid-col"><div className="card shadow-sm" style={{ border: 'none', overflow: 'hidden' }}>
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/036/751/167/small/ai-generated-portrait-of-a-handsome-ceo-smiling-photo.jpg"
-                  className="card-img-top"
-                  alt="Vince Richardson"
-                  style={{ width: '100%', height: '300px' }}
-                />
-                <div className="media-body mt-3 mb-3 text-center">
-                  <span className="meta-post" style={{ fontSize: '14px', color: 'gray' }}>February 26, 2018</span>
-                  <h2 className="mt-2">
-                    <button
-                      style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                        fontWeight: 'bold',
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                      }}
-                    >
-                      Free Template by Colorlib
-                    </button>
-                  </h2>
-                </div>
-              </div>
-              </div>
-            </div>
-            <div class="row mb-3 text-center">
-              <div class="col-sm-6  themed-grid-col"><div className="card shadow-sm" style={{ border: 'none', overflow: 'hidden' }}>
-                <img
-                  src="https://c4.wallpaperflare.com/wallpaper/485/860/1017/photo-taken-on-brown-terrain-wallpaper-preview.jpg"
-                  className="card-img-top"
-                  alt="Vince Richardson"
-                  style={{ width: '100%', height: '300px' }}
-                />
-                <div className="media-body mt-3 mb-3 text-center">
-                  <span className="meta-post" style={{ fontSize: '14px', color: 'gray' }}>February 26, 2018</span>
-                  <h2 className="mt-2">
-                    <button
-                      style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                        fontWeight: 'bold',
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                      }}
-                    >
-                      Free Template by Colorlib
-                    </button>
-                  </h2>
-                </div>
-              </div>
-              </div>
-              <div class="col-6  themed-grid-col"><div className="card shadow-sm" style={{ border: 'none', overflow: 'hidden' }}>
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPCVjuIOYGCAzf46Yo9Ejs7lPCpKNJGAhBWA&s"
-                  className="card-img-top"
-                  alt="Vince Richardson"
-                  style={{ width: '100%', height: '300px' }}
-                />
-                <div className="media-body mt-3 mb-3 text-center">
-                  <span className="meta-post" style={{ fontSize: '14px', color: 'gray' }}>February 26, 2018</span>
-                  <h2 className=" p-2">
-                    <button
-                      style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                        fontWeight: 'bold',
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                      }}
-                    >
-                      Free Template by Colorlib
-                    </button>
-                  </h2>
-                </div>
-              </div>
-              </div>
+              ))}
             </div>
           </div>
-          <div class="col-6 col-lg-4 themed-grid-col">
 
-            <div class="m-2 p-3">
-              <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search"></input>
-              </form>
+          {/* Sidebar */}
+          <div className="w-full lg:w-4/12 px-3 mt-8 lg:mt-0">
+            {/* Search Bar */}
+            <form className="mb-8">
+              <input
+                type="search"
+                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                placeholder="Search..."
+              />
+            </form>
 
-            </div>
-
-            <div class="m-2 p-2">
-                      <div class="m-2 p-2 text-left font-bold"> Popular Post</div>
-                      <div className="col-sm-12 ">
-              <div className="card shadow-sm p-2" style={{ border: 'none', display: 'flex', flexDirection: 'row', overflow: 'hidden' }}>
-                {/* Image Section */}
+            {/* Popular Posts */}
+            <h3 className="text-lg font-bold mb-4">Popular Posts</h3>
+            {[...Array(5)].map((_, index) => (
+              <div
+                key={index}
+                className="flex items-center mb-4 p-3 bg-white shadow-sm rounded-md"
+              >
                 <img
                   src="https://c4.wallpaperflare.com/wallpaper/485/860/1017/photo-taken-on-brown-terrain-wallpaper-preview.jpg"
-                  className="card-img-top"
-                  alt="Vince Richardson"
-                  style={{ width: '50%', height: '100px', objectFit: 'cover' }}
+                  alt="Post"
+                  className="w-20 h-20 object-cover rounded-md"
                 />
-
-                {/* Text Section */}
-                <div className="media-body mt-3 mb-3 text-center" style={{ paddingLeft: '20px' }}>
-                  <span className="meta-post" style={{ fontSize: '14px', color: 'gray' }}>February 26, 2018</span>
-                  <h2 className="">
-                    <button
-                      style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                        fontWeight: 'bold',
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                        fontSize: '14px'
-                      }}
-                    >
-                      Free Template by Colorlib
-                    </button>
-                  </h2>
+                <div className="ml-4">
+                  <span className="text-sm text-gray-500">February 26, 2018</span>
+                  <h4 className="mt-2 text-md font-semibold hover:text-yellow-500">
+                    <button className="focus:outline-none">Free Template by Colorlib</button>
+                  </h4>
                 </div>
               </div>
-            </div><div className="col-sm-12 ">
-              <div className="card shadow-sm p-2" style={{ border: 'none', display: 'flex', flexDirection: 'row', overflow: 'hidden' }}>
-                {/* Image Section */}
-                <img
-                  src="https://c4.wallpaperflare.com/wallpaper/485/860/1017/photo-taken-on-brown-terrain-wallpaper-preview.jpg"
-                  className="card-img-top"
-                  alt="Vince Richardson"
-                  style={{ width: '50%', height: '100px', objectFit: 'cover' }}
-                />
-
-                {/* Text Section */}
-                <div className="media-body mt-3 mb-3 text-center" style={{ paddingLeft: '20px' }}>
-                  <span className="meta-post" style={{ fontSize: '14px', color: 'gray' }}>February 26, 2018</span>
-                  <h2 className="">
-                    <button
-                      style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                        fontWeight: 'bold',
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                        fontSize: '14px'
-                      }}
-                    >
-                      Free Template by Colorlib
-                    </button>
-                  </h2>
-                </div>
-              </div>
-            </div><div className="col-sm-12 ">
-              <div className="card shadow-sm p-2" style={{ border: 'none', display: 'flex', flexDirection: 'row', overflow: 'hidden' }}>
-                {/* Image Section */}
-                <img
-                  src="https://c4.wallpaperflare.com/wallpaper/485/860/1017/photo-taken-on-brown-terrain-wallpaper-preview.jpg"
-                  className="card-img-top"
-                  alt="Vince Richardson"
-                  style={{ width: '50%', height: '100px', objectFit: 'cover' }}
-                />
-
-                {/* Text Section */}
-                <div className="media-body mt-3 mb-3 text-center" style={{ paddingLeft: '20px' }}>
-                  <span className="meta-post" style={{ fontSize: '14px', color: 'gray' }}>February 26, 2018</span>
-                  <h2 className="">
-                    <button
-                      style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                        fontWeight: 'bold',
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                        fontSize: '14px'
-                      }}
-                    >
-                      Free Template by Colorlib
-                    </button>
-                  </h2>
-                </div>
-              </div>
-            </div><div className="col-sm-12 ">
-              <div className="card shadow-sm p-2" style={{ border: 'none', display: 'flex', flexDirection: 'row', overflow: 'hidden' }}>
-                {/* Image Section */}
-                <img
-                  src="https://c4.wallpaperflare.com/wallpaper/485/860/1017/photo-taken-on-brown-terrain-wallpaper-preview.jpg"
-                  className="card-img-top"
-                  alt="Vince Richardson"
-                  style={{ width: '50%', height: '100px', objectFit: 'cover' }}
-                />
-
-                {/* Text Section */}
-                <div className="media-body mt-3 mb-3 text-center" style={{ paddingLeft: '20px' }}>
-                  <span className="meta-post" style={{ fontSize: '14px', color: 'gray' }}>February 26, 2018</span>
-                  <h2 className="">
-                    <button
-                      style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                        fontWeight: 'bold',
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                        fontSize: '14px'
-                      }}
-                    >
-                      Free Template by Colorlib
-                    </button>
-                  </h2>
-                </div>
-              </div>
-            </div><div className="col-sm-12 ">
-              <div className="card shadow-sm p-2" style={{ border: 'none', display: 'flex', flexDirection: 'row', overflow: 'hidden' }}>
-                {/* Image Section */}
-                <img
-                  src="https://c4.wallpaperflare.com/wallpaper/485/860/1017/photo-taken-on-brown-terrain-wallpaper-preview.jpg"
-                  className="card-img-top"
-                  alt="Vince Richardson"
-                  style={{ width: '50%', height: '100px', objectFit: 'cover' }}
-                />
-
-                {/* Text Section */}
-                <div className="media-body mt-3 mb-3 text-center" style={{ paddingLeft: '20px' }}>
-                  <span className="meta-post" style={{ fontSize: '14px', color: 'gray' }}>February 26, 2018</span>
-                  <h2 className="">
-                    <button
-                      style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                        fontWeight: 'bold',
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                        fontSize: '14px'
-                      }}
-                    >
-                      Free Template by Colorlib
-                    </button>
-                  </h2>
-                </div>
-              </div>
-            </div>
-            </div>
-
-
+            ))}
           </div>
         </div>
 
-        <div class="col-md-12 pb-5 mt-mb-5 pl">
-                <nav role="navigation">
-                  <ul class="pagination custom-pagination pagination-lg">
-                    <li class="page-item active">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item ">
-                      <a class="page-link " href="#">2</a>
-                    </li>
-                    <li class="page-item ">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-
+        {/* Pagination */}
+        <div className="mt-8 flex justify-center">
+          <ul className="pagination flex">
+            {[1, 2, 3].map((page) => (
+              <li
+                key={page}
+                className="mx-1 bg-white border rounded-md shadow-sm hover:bg-yellow-500 hover:text-white transition-all"
+              >
+                <a
+                  href="#"
+                  className={`px-4 py-2 block ${
+                    page === 1 ? "bg-yellow-500 text-white" : ""
+                  }`}
+                >
+                  {page}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-
     </>
   );
 };
