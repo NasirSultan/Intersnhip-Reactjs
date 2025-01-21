@@ -13,33 +13,62 @@ const Contact = () => {
   }, []);
   return (
     <>
-      <div
-        className="h-screen relative"
+        <section
+        className="site-hero overlay"
         style={{
           backgroundImage:
             'url(https://media.gadventures.com/media-server/cache/48/50/4850d7b3b1aacc51b6a0182de9ea2c35.jpg)',
           backgroundSize: 'cover',
-          backgroundPosition: 'center ',
-          height: '600px',
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat',
+          width: '100%',
+          height: 'auto',
+          aspectRatio: '16 / 9',
         }}
+        data-aos="fade-in" // Add animation
       >
-
-
         <Header />
-        <div className=" top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center" data-aos="fade-up" style={{ marginTop: "150px" }}>
-          <h1
-            className="text-white text-5xl font-bold mb-4 hover:text-yellow-400 hover:scale-110 transition-all duration-300"
-            style={{ fontSize: "80px", fontWeight: "bold", fontWeight: "900" }}
+
+        <div
+          className="container d-flex justify-content-center align-items-center flex-column"
+          style={{ height: '100%' }}
+        >
+          <div
+            className="row site-hero-inner justify-content-center align-items-center text-center"
+            style={{ width: '100%' }}
           >
-            Contact
-          </h1>
-          <p
-            className="text-white text-xl font-bold hover:text-gray-300 transition-all duration-300"
+            <div
+              className="col-lg-8 col-md-10 col-sm-12"
+              style={{
+                paddingTop: '20px',
+                paddingBottom: '20px',
+              }}
+            >
+              <h1
+                className="heading mb-4 fade-up fade-up-visible"
+                style={{
+                  marginBottom: '30px',
+                  fontSize: '3rem',
+                  lineHeight: '1.2',
+                  color: 'white',
+                  fontSize: "clamp(40px, 5vw, 80px)", // Responsive font size
+                  fontWeight: "900",
+                }}
+                data-aos="fade-up" // Add animation
+              >
+             Contact
+              </h1>
+              <p
+            className="text-white text-xl font-bold " data-aos="fade-up"
           >
-            A free template by Colorlib. Download and share!
+          
+    A free template by Colorlib. Download and share!
           </p>
+
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
 
       {/* //hero section */}

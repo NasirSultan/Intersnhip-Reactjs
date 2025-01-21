@@ -14,41 +14,61 @@ const Gallery = () => {
 
   return (
     <>
-      <div
-        className="h-screen relative"
+       <section
+        className="site-hero overlay"
         style={{
           backgroundImage:
             'url(https://static.vecteezy.com/system/resources/previews/037/248/582/non_2x/ai-generated-travelling-to-thailand-advertisment-background-with-copy-space-free-photo.jpg)',
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '600px',
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat',
+          width: '100%',
+          height: 'auto',
+          aspectRatio: '16 / 9',
         }}
+        data-aos="fade-in" // Add animation
       >
         <Header />
+
         <div
-          className="text-center position-absolute top-50 start-50 translate-middle"
-          data-aos="fade-up"
-          style={{ marginTop: "150px" }}
+          className="container d-flex justify-content-center align-items-center flex-column"
+          style={{ height: '100%' }}
         >
-          <h1
-            className="text-white fw-bold mb-4 hover:text-yellow-400 transition-all"
-            style={{
-              fontSize: "clamp(40px, 5vw, 80px)", // Responsive font size
-              fontWeight: "900",
-            }}
+          <div
+            className="row site-hero-inner justify-content-center align-items-center text-center"
+            style={{ width: '100%' }}
           >
-            Gallery
-          </h1>
-          <p
-            className="text-white fw-bold hover:text-gray-300 transition-all"
-            style={{
-              fontSize: "clamp(16px, 2.5vw, 24px)", // Responsive font size
-            }}
+            <div
+              className="col-lg-8 col-md-10 col-sm-12"
+              style={{
+                paddingTop: '20px',
+                paddingBottom: '20px',
+              }}
+            >
+              <h1
+                className="heading mb-4 fade-up fade-up-visible"
+                style={{
+                  marginBottom: '30px',
+                  fontSize: '3rem',
+                  lineHeight: '1.2',
+                  color: 'white',
+                  fontSize: "clamp(40px, 5vw, 80px)", // Responsive font size
+                  fontWeight: "900",
+                }}
+                data-aos="fade-up" // Add animation
+              >
+                Gallery
+              </h1>
+              <p
+            className="text-white text-xl font-bold " data-aos="fade-up"
           >
             A free template by Colorlib. Download and share!
           </p>
+
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
       <div className="container mt-5">
         {/* First Row with Images */}
