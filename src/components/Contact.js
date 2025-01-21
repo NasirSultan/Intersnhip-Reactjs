@@ -228,87 +228,135 @@ const Contact = () => {
       </div>
     </div>
 
-      <div className="bg-light" style={{ paddingTop: "100px", paddingBottom: "100px" }}>
-        <div className="container b-5 ">
-          {/* Section Header */}
-          <div className="row justify-content-center text-center pb-5">
-            <div className="col-md-8">
-              <h2 className="heading aos-init aos-animate mb-3" data-aos="fade-up"
-                style={{ fontSize: "70px", fontWeight: "bold", fontWeight: "900" }}
-              >Happy Customers</h2>
-              <p className="lead aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+    <div
+  className="bg-light"
+  style={{ paddingTop: "100px", paddingBottom: "100px" }}
+>
+  <div className="container">
+    {/* Section Header */}
+    <div className="row justify-content-center text-center pb-5">
+      <div className="col-md-8">
+        <h2
+          className="heading aos-init aos-animate mb-3"
+          data-aos="fade-up"
+          style={{
+            fontSize: "2.5rem",
+            fontWeight: "900",
+          }}
+        >
+          Happy Customers
+        </h2>
+        <p
+          className="lead aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Here's what our customers have to say about us!
+        </p>
+      </div>
+    </div>
 
-              </p>
-            </div>
+    {/* Features */}
+    <div className="row bg-gray">
+      {/* Feature 1 */}
+      <div
+        className="col-sm-12 col-md-6 col-lg-4 mb-4 aos-init aos-animate"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div className="d-block text-center">
+          <img
+            src="https://travelomoon.com//uploads/0000/1/2023/08/18/best-tours.jpg"
+            alt="Airplane"
+            className="rounded-circle"
+            style={{ width: "70px", height: "70px", marginBottom: "15px" }}
+          />
+          <div className="p-2">
+            <h3
+              style={{
+                color: "#18181b",
+                fontSize: "1.25rem",
+                fontFamily: "Roboto, sans-serif",
+                fontWeight: "400",
+              }}
+            >
+              “Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.”
+            </h3>
+            <p style={{ color: "#6c757d" }}>— Clare Gupta</p>
           </div>
-
-          {/* Features */}
-          <div className="row bg-gray">
-            {/* Feature 1 */}
-            <div className="col-md-6 col-lg-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-              <div className="d-block ">
-                <div className="align-items-center">
-                  {/* Replace icon with image */}
-                  <img
-                    src="https://travelomoon.com//uploads/0000/1/2023/08/18/best-tours.jpg"
-                    alt="Airplane"
-                    className="rounded-circle mx-3 "
-                    style={{ width: '70px', height: '70px', marginRight: '15px' }}
-                  />
-                  <div class=" m-2 p-2">
-                    <h3 style={{ color: '#18181b', fontSize: '20px', fontFamily: 'Roboto, sans-serif', fontWeight: 'lighter' }}>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</h3>
-                    <p style={{ color: '#cacace' }}>— Clare Gupta</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            {/* Feature 2 */}
-            <div className="col-md-6 col-lg-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-              <div className="d-block ">
-                <div className="align-items-center">
-                  {/* Replace icon with image */}
-                  <img
-                    src="https://travelomoon.com//uploads/0000/1/2023/08/18/best-tours.jpg"
-                    alt="Airplane"
-                    className="rounded-circle mx-3 "
-                    style={{ width: '70px', height: '70px', marginRight: '15px' }}
-                  />
-                  <div class=" m-2 p-2">
-                    <h3 style={{ color: '#18181b', fontSize: '20px', fontFamily: 'Roboto, sans-serif', fontWeight: 'lighter' }}>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</h3>
-                    <p style={{ color: '#cacace' }}>— Clare Gupta</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            {/* Feature 3 */}
-            <div className="col-md-6 col-lg-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-              <div className="d-block ">
-                <div className="align-items-center">
-                  {/* Replace icon with image */}
-                  <img
-                    src="https://travelomoon.com//uploads/0000/1/2023/08/18/best-tours.jpg"
-                    alt="Airplane"
-                    className="rounded-circle mx-3 "
-                    style={{ width: '70px', height: '70px', marginRight: '15px' }}
-                  />
-                  <div class=" m-2 p-2">
-                    <h3 style={{ color: '#18181b', fontSize: '20px', fontFamily: 'Roboto, sans-serif', fontWeight: 'lighter' }}>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</h3>
-                    <p style={{ color: '#cacace' }}>— Clare Gupta</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            {/* Additional features follow... */}
-          </div>
-
         </div>
       </div>
+
+      {/* Feature 2 */}
+      <div
+        className="col-sm-12 col-md-6 col-lg-4 mb-4 aos-init aos-animate"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div className="d-block text-center">
+          <img
+            src="https://travelomoon.com//uploads/0000/1/2023/08/18/best-tours.jpg"
+            alt="Airplane"
+            className="rounded-circle"
+            style={{ width: "70px", height: "70px", marginBottom: "15px" }}
+          />
+          <div className="p-2">
+            <h3
+              style={{
+                color: "#18181b",
+                fontSize: "1.25rem",
+                fontFamily: "Roboto, sans-serif",
+                fontWeight: "400",
+              }}
+            >
+              “Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.”
+            </h3>
+            <p style={{ color: "#6c757d" }}>— Clare Gupta</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Feature 3 */}
+      <div
+        className="col-sm-12 col-md-6 col-lg-4 mb-4 aos-init aos-animate"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <div className="d-block text-center">
+          <img
+            src="https://travelomoon.com//uploads/0000/1/2023/08/18/best-tours.jpg"
+            alt="Airplane"
+            className="rounded-circle"
+            style={{ width: "70px", height: "70px", marginBottom: "15px" }}
+          />
+          <div className="p-2">
+            <h3
+              style={{
+                color: "#18181b",
+                fontSize: "1.25rem",
+                fontFamily: "Roboto, sans-serif",
+                fontWeight: "400",
+              }}
+            >
+              “Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.”
+            </h3>
+            <p style={{ color: "#6c757d" }}>— Clare Gupta</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     </>
   );
 };

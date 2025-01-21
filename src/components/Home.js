@@ -54,10 +54,12 @@ const Home = () => {
         Travel &amp; Tours
       </h1>
       <p
-        className="sub-heading mb-5"
+        className="sub-heading mb-2"
         style={{
-          marginBottom: '20px',
+          marginBottom: '10px',
           fontSize: '1.25rem',
+          color: 'black',
+         
         }}
       >
         A free template by{' '}
@@ -66,11 +68,11 @@ const Home = () => {
         </a>
         . Download and share!
       </p>
-      <p className="pt-4" style={{ marginTop: '20px' }}>
+      <p className="pt-4" style={{ marginTop: '10px' }}>
         <a
           href="#/"
           target="_blank"
-          className="btn uppercase btn-outline-light d-inline-block py-3 px-4"
+          className="btn uppercase btn-outline-light d-inline-block "
           style={{
             fontSize: '1rem',
           }}
@@ -355,7 +357,7 @@ const Home = () => {
         <h2 className="heading aos-init aos-animate" data-aos="fade-up">
           Experience Once In Your Lifetime
         </h2>
-        <p className="lead aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <p className="lead aos-init aos-animate text-black" data-aos="fade-up" data-aos-delay="100">
           Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
           Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
         </p>
