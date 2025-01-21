@@ -64,7 +64,7 @@ const Hotels = () => {
         </div>
       </section>
 
-      <div className="container m-5 p-5">
+      <div className="container mt-5 pt-5">
         <div className="row p-3">
           <div className="col-12 col-md-4 text-center" data-aos="fade-up">
             <i className="fas fa-hotel fa-5x text-primary mb-3"></i>
@@ -114,7 +114,7 @@ const Hotels = () => {
         </div>
       </div>
 
-      <div className="container m-5 p-5">
+      <div className="container mt-5 pt-5">
         <div className="row featurette" data-aos="fade-up">
           <div className="col-md-6 order-md-2 d-flex flex-column justify-content-center align-items-center">
             <h2 className="featurette-heading fw-normal lh-1 text-center">
@@ -147,7 +147,7 @@ const Hotels = () => {
         </div>
       </div>
 
-      <div
+      <div class="mt-5"
         style={{
           background: "linear-gradient(to bottom, rgb(251, 251, 251), rgb(101, 101, 101), rgb(250, 248, 248))",
         }}

@@ -88,7 +88,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <div className="container m-5 p-5">
+      <div className="container mt-5">
         <div className="row featurette">
           <div className="col-12 col-md-6 order-md-2 d-flex flex-column justify-content-center align-items-center" data-aos="fade-left">
             <h2 className="featurette-heading fw-normal lh-1 text-center">

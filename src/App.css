@@ -34,15 +34,14 @@
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(20px); /* Start slightly lower */
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* End at the normal position */
+    transform: translateY(0);
   }
 }
 
-/* Apply fade-up animation to elements when they are in view */
 .fade-up {
   opacity: 0;
   animation: fadeUp 2s forwards;
@@ -53,62 +52,36 @@
   animation: fadeUp 1s forwards;
 }
 
-/* Optional: You can adjust the timing and other animation properties */
-.col-md-10 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.col-md-10 .heading {
-  margin-bottom: 30px;
-}
-
-.col-md-10 .sub-heading {
-  margin-bottom: 20px;
-}
-
-.col-md-10 .pt-4 {
-  margin-top: 20px;
-}
-
 /* Hover effect for the entire column */
 .hover-effect {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease; /* Smooth transform, shadow, and margin */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease;
 }
 
 .hover-effect:hover {
-  transform: translateY(-10px); /* Slightly lift the column */
-  /* Add shadow on hover */
+  transform: translateY(-10px);
 }
 
 /* Hover effect for the icons */
 .hover-effect i {
-  transition: transform 0.3s ease; /* Smooth scaling effect */
+  transition: transform 0.3s ease;
 }
 
 .hover-effect:hover i {
-  transform: scale(1.2); /* Scale up the icon slightly on hover */
+  transform: scale(1.2);
 }
 
-/* Optional: Smooth transition for text */
 .hover-effect h2, .hover-effect p {
   transition: color 0.3s ease;
 }
 
 .hover-effect:hover h2, .hover-effect:hover p {
-  color: #007bff; /* Change color of heading and text on hover */
+  color: #007bff;
 }
 
-/* Style for hover effect on cards */
-.hover-effect:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
-
-/* Style for card shadow effect on hover */
+/* Hover effect for cards */
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
 }
 
@@ -131,50 +104,34 @@ p {
   transition: background-color 0.3s ease;
 }
 
-
-
 /* Left/Right animation for hover */
 .left-right-effect {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .left-right-effect:hover {
-  transform: translateX(15px); /* Move the element to the right */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-.left-right-effect.left {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow */
+  transform: translateX(15px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .left-right-effect.left:hover {
-  transform: translateX(-15px); /* Move the element to the left */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  transform: translateX(-15px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover effect for icon with left-right animation */
 .left-right-effect i {
-  transition: transform 0.3s ease; /* Smooth scaling effect */
+  transition: transform 0.3s ease;
 }
 
 .left-right-effect:hover i {
-  transform: scale(1.2); /* Scale up the icon slightly on hover */
+  transform: scale(1.2);
 }
-
 
 /* General Container */
 .section {
-  background-color: #f8f9fa; /* light background */
+  background-color: #f8f9fa;
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-/* Heading Style */
-.heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Animation for Slide-In from Left */
@@ -201,17 +158,6 @@ p {
   }
 }
 
-/* Add Animation to Sections */
-.aos-init {
-  opacity: 0;
-}
-
-.aos-animate {
-  opacity: 1;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
-
 /* Apply slide in from left for even-indexed items */
 .aos-init[data-aos="fade-up"].left-to-right {
   animation-name: slideInLeft;
@@ -228,18 +174,17 @@ p {
 }
 
 .ftco-img-flaticon:hover {
-  transform: scale(1.1); /* Scale up slightly */
+  transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover Effect for Text */
 .ftco-img-flaticon h3, .ftco-img-flaticon p {
   transition: color 0.3s ease;
 }
 
 .ftco-img-flaticon:hover h3,
 .ftco-img-flaticon:hover p {
-  color: #007bff; /* Change color on hover */
+  color: #007bff;
 }
 
 /* Scroll Effects */
@@ -247,7 +192,6 @@ p {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Parallax effect or move elements up as user scrolls */
 .parallax {
   position: relative;
   transform: translateY(0);
@@ -259,96 +203,52 @@ p {
 }
 
 .parallax-effect {
-  transform: translateY(-50px); /* Example: moves elements up */
+  transform: translateY(-50px);
 }
 
-/* Adjusting elements based on scroll position (for smoother effects) */
-.parallax-element {
-  transition: transform 0.2s ease-out;
-}
-
-/* Hover effect for icons */
-.ftco-img-flaticon {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.ftco-img-flaticon:hover {
-  transform: scale(1.1); /* Scale up slightly */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Style for cards hover effect */
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-}
-
-
-@media (max-width: 1200px) {
-  .heading {
-    font-size: 2.5rem !important;
+/* Scroll Animation */
+@keyframes scroll-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  .sub-heading {
-    font-size: 1.15rem !important;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (max-width: 992px) {
-  .heading {
-    font-size: 2rem !important;
-  }
-  .sub-heading {
-    font-size: 1rem !important;
-  }
+.scroll-down {
+  animation: scroll-animation 1s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .heading {
-    font-size: 1.75rem !important;
-  }
-  .sub-heading {
-    font-size: 0.95rem !important;
-  }
-
-  .btn {
-    padding: 10px 15px !important;
-    font-size: 0.9rem !important;
-  }
+/* Optional smooth scroll effect */
+html {
+  scroll-behavior: smooth;
 }
 
-@media (max-width: 576px) {
-  .heading {
-    font-size: 1.5rem !important;
-  }
-  .sub-heading {
-    font-size: 0.85rem !important;
-  }
-
-  .btn {
-    padding: 8px 10px !important;
-    font-size: 0.8rem !important;
-  }
-}
+/* Site Hero Styles */
 .site-hero {
-  background-size: cover; /* Ensures the image scales proportionally */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh; /* Keeps the section full-screen */
+  height: 100vh;
 }
 
 @media (max-width: 768px) {
   .site-hero {
-    background-position: center center; /* Adjusts for smaller devices */
-    height: auto; /* Let the content dictate height */
+    background-position: center center;
+    height: auto;
   }
 }
 
 @media (max-width: 576px) {
   .site-hero {
-    background-size: cover; /* Keeps the image scaling properly */
-    height: 100vh; /* Can adjust height if needed */
+    background-size: cover;
+    height: 100vh;
   }
 }
 
@@ -395,26 +295,27 @@ p {
   }
 }
 
-/* Scroll Animation */
-@keyframes scroll-animation {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+
+
+/* Add this CSS to remove side scroll */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Apply animation to scroll-down link */
-.scroll-down {
-  animation: scroll-animation 1s ease-in-out;
-  display: inline-block;
-  text-decoration: none;
+body, html {
+  overflow-x: hidden;  /* Prevent horizontal scroll */
+  width: 100%;
 }
 
-/* Optional smooth scroll effect */
-html {
-  scroll-behavior: smooth;
+/* Ensure images and other elements fit within the viewport */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 100%;
+  
 }
