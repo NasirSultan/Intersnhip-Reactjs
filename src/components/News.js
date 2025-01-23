@@ -77,18 +77,7 @@ const News = () => {
                 </a>
                 . Download and share!
               </p>
-              <p className="pt-4">
-                <a
-                  href="#/"
-                  target="_blank"
-                  className="btn uppercase btn-outline-light d-inline-block"
-                  style={{
-                    fontSize: '1rem',
-                  }}
-                >
-                  Visit Colorlib
-                </a>
-              </p>
+              
             </div>
           </div>
         </div>
