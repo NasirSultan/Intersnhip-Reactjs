@@ -319,3 +319,44 @@ img {
   max-width: 100%;
   
 }
+.heading {
+  font-size: 100px; /* Default font size for larger screens */
+  line-height: 1.2;
+  font-weight: bold;
+  font-family:'serif'; /* Makes the text bold */
+}
+
+/* For small tablets and larger devices */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 32px; /* Smaller font size for tablets and small screens */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  .heading {
+    font-size: 24px; /* Even smaller font size for mobile screens */
+  }
+}
+
+
+
+.hd {
+  font-size: 50px; /* Default font size for larger screens */
+  line-height: 1.2;
+  font-weight: bold;
+  font-family:'serif'; /* Makes the text bold */
+}
+
+@media (max-width: 60px) {
+  .hd {
+    font-size: 32px; /* Smaller font size for tablets and small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .hd {
+    font-size: 24px; /* Even smaller font size for mobile screens */
+  }
+}

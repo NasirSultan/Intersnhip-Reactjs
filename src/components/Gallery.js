@@ -14,8 +14,7 @@ const Gallery = () => {
 
   return (
     <>
-       <section
-        className="site-hero overlay"
+         <section
         style={{
           backgroundImage:
             'url(https://static.vecteezy.com/system/resources/previews/037/248/582/non_2x/ai-generated-travelling-to-thailand-advertisment-background-with-copy-space-free-photo.jpg)',
@@ -23,53 +22,66 @@ const Gallery = () => {
           backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat',
           width: '100%',
-          height: 'auto',
           aspectRatio: '16 / 9',
-        }}
-        data-aos="fade-in" // Add animation
+          display: 'flex',
+          flexDirection: 'column',
+        }}// Stack items vertically
+
       >
-        <Header />
 
         <div
-          className="container d-flex justify-content-center align-items-center flex-column"
-          style={{ height: '100%' }}
+          className="header-container"
+          style={{
+            padding: '10px 20px', // Add some spacing around the header
+          }}
+        >
+          <Header />
+        </div>
+
+
+        <div
+          className="container d-flex justify-content-center align-items-center flex-column text-center" data-aos="fade-up"
+          style={{
+            flex: 1, // Make this section take up remaining space
+            padding: '20px',
+          }}
         >
           <div
-            className="row site-hero-inner justify-content-center align-items-center text-center"
-            style={{ width: '100%' }}
+            className="row site-hero-inner"
+            style={{
+              width: '100%',
+              maxWidth: '600px', // Restrict width for better readability
+            }}
           >
             <div
-              className="col-lg-8 col-md-10 col-sm-12"
+              className="col-12"
               style={{
-                paddingTop: '20px',
-                paddingBottom: '20px',
+                padding: '20px',
               }}
             >
-              <h1
-                className="heading mb-4 fade-up fade-up-visible"
-                style={{
-                  marginBottom: '30px',
-                  fontSize: '3rem',
-                  lineHeight: '1.2',
-                  color: 'white',
-                  fontSize: "clamp(40px, 5vw, 80px)", // Responsive font size
-                  fontWeight: "900",
-                }}
-                data-aos="fade-up" // Add animation
-              >
-                Gallery
-              </h1>
-              <p
-            className="text-white text-xl font-bold " data-aos="fade-up"
-          >
-            A free template by Colorlib. Download and share!
-          </p>
+              <h1 className="heading mb-4">
+              Gallery
 
+              </h1>
+
+              <p
+                className="sub-heading mb-2"
+                style={{
+                  fontSize: '1.25rem',
+                  color: 'black',
+                }}
+              >
+                A free template by{' '}
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Colorlib
+                </a>
+                . Download and share!
+              </p>
+              
             </div>
           </div>
         </div>
       </section>
-
       <div className="container mt-5">
         {/* First Row with Images */}
         <div className="row g-3">

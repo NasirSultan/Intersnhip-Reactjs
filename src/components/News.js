@@ -16,41 +16,83 @@ const News = () => {
     <>
       {/* Hero Section */}
       <section
-        className="site-hero overlay relative"
         style={{
           backgroundImage:
-            "url(https://media.gadventures.com/media-server/cache/48/50/4850d7b3b1aacc51b6a0182de9ea2c35.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          width: "100%",
-          height: "50vh",
-        }}
-        data-aos="fade-in"
+            'url(https://media.gadventures.com/media-server/cache/48/50/4850d7b3b1aacc51b6a0182de9ea2c35.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat',
+          width: '100%',
+          aspectRatio: '16 / 9',
+          display: 'flex',
+          flexDirection: 'column',
+        }}// Stack items vertically
+
       >
-        <Header />
-        <div className="container mx-auto flex justify-center items-center h-full">
-          <div className="text-center">
-            <h1
-              className="text-white font-extrabold mb-4"
+
+        <div
+          className="header-container"
+          style={{
+            padding: '10px 20px', // Add some spacing around the header
+          }}
+        >
+          <Header />
+        </div>
+
+
+        <div
+          className="container d-flex justify-content-center align-items-center flex-column text-center" data-aos="fade-up"
+          style={{
+            flex: 1, // Make this section take up remaining space
+            padding: '20px',
+          }}
+        >
+          <div
+            className="row site-hero-inner"
+            style={{
+              width: '100%',
+              maxWidth: '600px', // Restrict width for better readability
+            }}
+          >
+            <div
+              className="col-12"
               style={{
-                fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
-                lineHeight: "1.2",
+                padding: '20px',
               }}
-              data-aos="fade-up"
             >
-             Blog
-            </h1>
-            <p
-              className="text-white text-lg font-medium"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              A free template by Colorlib. Download and share!
-            </p>
+              <h1 className="heading mb-4">
+              Blog
+              </h1>
+
+              <p
+                className="sub-heading mb-2"
+                style={{
+                  fontSize: '1.25rem',
+                  color: 'black',
+                }}
+              >
+                A free template by{' '}
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Colorlib
+                </a>
+                . Download and share!
+              </p>
+              <p className="pt-4">
+                <a
+                  href="#/"
+                  target="_blank"
+                  className="btn uppercase btn-outline-light d-inline-block"
+                  style={{
+                    fontSize: '1rem',
+                  }}
+                >
+                  Visit Colorlib
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-wrap -mx-3">
