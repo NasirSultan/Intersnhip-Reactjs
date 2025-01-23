@@ -138,7 +138,7 @@ const Hotels = () => {
             <h2 className="featurette-heading fw-normal lh-1 text-center">
               Oh yeah, it’s that good. <span className="text-body-secondary">See for yourself.</span>
             </h2>
-            <p className="lead text-center">
+            <p className="lead text-black text-center">
               Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.
             </p>
             <p className="pt-4">
