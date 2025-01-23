@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // AOS style
-import Header from './Header';
+import Header from "./Header";
 
 const News = () => {
   useEffect(() => {
@@ -16,77 +16,58 @@ const News = () => {
     <>
       {/* Hero Section */}
       <section
-        className="site-hero overlay"
+        className="site-hero overlay relative"
         style={{
           backgroundImage:
-            'url(https://media.gadventures.com/media-server/cache/48/50/4850d7b3b1aacc51b6a0182de9ea2c35.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
-          backgroundRepeat: 'no-repeat',
-          width: '100%',
-          height: 'auto',
-          aspectRatio: '16 / 9',
+            "url(https://media.gadventures.com/media-server/cache/48/50/4850d7b3b1aacc51b6a0182de9ea2c35.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          width: "100%",
+          height: "50vh",
         }}
-        data-aos="fade-in" // Add animation
+        data-aos="fade-in"
       >
         <Header />
-
-        <div
-          className="container d-flex justify-content-center align-items-center flex-column"
-          style={{ height: '100%' }}
-        >
-          <div
-            className="row site-hero-inner justify-content-center align-items-center text-center"
-            style={{ width: '100%' }}
-          >
-            <div
-              className="col-lg-8 col-md-10 col-sm-12"
+        <div className="container mx-auto flex justify-center items-center h-full">
+          <div className="text-center">
+            <h1
+              className="text-white font-extrabold mb-4"
               style={{
-                paddingTop: '20px',
-                paddingBottom: '20px',
+                fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
+                lineHeight: "1.2",
               }}
+              data-aos="fade-up"
             >
-              <h1
-                className="heading mb-4 fade-up fade-up-visible"
-                style={{
-                  marginBottom: '30px',
-                  fontSize: '3rem',
-                  lineHeight: '1.2',
-                  color: 'white',
-                  fontSize: "clamp(40px, 5vw, 80px)", // Responsive font size
-                  fontWeight: "900",
-                }}
-                data-aos="fade-up" // Add animation
-              >
-                News
-              </h1>
-              <p
-            className="text-white text-xl font-bold " data-aos="fade-up"
-          >
-          
-    A free template by Colorlib. Download and share!
-          </p>
-
-            </div>
+             Blog
+            </h1>
+            <p
+              className="text-white text-lg font-medium"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              A free template by Colorlib. Download and share!
+            </p>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+      <div className="container mx-auto px-4 py-8">
         <div className="flex flex-wrap -mx-3">
           {/* Main Section */}
           <div className="w-full lg:w-8/12 px-3">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[...Array(4)].map((_, index) => (
-                <div key={index} className="card shadow-sm overflow-hidden">
+                <div key={index} className="card shadow-md rounded-lg overflow-hidden">
                   <img
                     src="https://c4.wallpaperflare.com/wallpaper/485/860/1017/photo-taken-on-brown-terrain-wallpaper-preview.jpg"
                     alt="News"
                     className="w-full h-64 object-cover"
                   />
                   <div className="p-4">
-                    <span className="text-sm text-gray-500">February 26, 2018</span>
+                    <span className="text-sm text-gray-500">
+                      February 26, 2018
+                    </span>
                     <h2 className="mt-2 font-bold text-lg">
                       <button className="hover:text-yellow-500 transition-all duration-200">
                         Free Template by Colorlib
@@ -124,11 +105,41 @@ const News = () => {
                 <div className="ml-4">
                   <span className="text-sm text-gray-500">February 26, 2018</span>
                   <h4 className="mt-2 text-md font-semibold hover:text-yellow-500">
-                    <button className="focus:outline-none">Free Template by Colorlib</button>
+                    <button className="focus:outline-none">
+                      Free Template by Colorlib
+                    </button>
                   </h4>
                 </div>
               </div>
             ))}
+
+            {/* Categories */}
+            <div class="mt-4">
+  <h3 class="fs-5 fw-bold mb-3">Categories</h3>
+  <ul class="list-unstyled">
+    <li class="mb-2">
+      <a href="#" class="text-secondary text-decoration-none d-flex justify-content-between">
+        <span>Events</span> <span class="text-muted">(12)</span>
+      </a>
+    </li>
+    <li class="mb-2">
+      <a href="#" class="text-secondary text-decoration-none d-flex justify-content-between">
+        <span>Resto bar</span> <span class="text-muted">(4)</span>
+      </a>
+    </li>
+    <li class="mb-2">
+      <a href="#" class="text-secondary text-decoration-none d-flex justify-content-between">
+        <span>Celebration</span> <span class="text-muted">(23)</span>
+      </a>
+    </li>
+    <li class="mb-2">
+      <a href="#" class="text-secondary text-decoration-none d-flex justify-content-between">
+        <span>Promos</span> <span class="text-muted">(8)</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
           </div>
         </div>
 
