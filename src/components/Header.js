@@ -18,11 +18,11 @@ const Header = () => {
 
   return (
     
-      <div className="container d-flex justify-content-between align-items-center  p-3" style={{ backgroundColor: "transparent" }}>
+      <div className="container d-flex justify-content-between align-items-center " style={{ backgroundColor: "transparent" }}>
         {/* Left Side: Icon and Website Name */}
         <div className="d-flex align-items-center">
-          <i className="fas fa-globe me-2"></i> {/* Font Awesome Icon */}
-          <span className="fw-bold text-white">Travel Website</span>
+        
+          <span className="fw-bold text-white">Clone</span>
         </div>
 
         {/* Right Side: Hamburger Menu */}
