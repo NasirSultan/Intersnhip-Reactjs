@@ -59,7 +59,7 @@ const Gallery = () => {
                 padding: '20px',
               }}
             >
-              <h1 className="heading mb-4">
+              <h1 className="heading text-center mb-4">
               Gallery
 
               </h1>

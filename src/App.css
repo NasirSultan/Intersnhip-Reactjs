@@ -323,7 +323,8 @@ img {
   font-size: 100px; /* Default font size for larger screens */
   line-height: 1.2;
   font-weight: bold;
-  font-family:'serif'; /* Makes the text bold */
+  font-family:'serif';
+  text-align: center; /* Makes the text bold */
 }
 
 /* For small tablets and larger devices */
@@ -358,5 +359,20 @@ img {
 @media (max-width: 576px) {
   .hd {
     font-size: 24px; /* Even smaller font size for mobile screens */
+  }
+}
+
+
+/* Mobile devices: Stack text vertically */
+@media (max-width: 576px) {
+  .heading, .lead {
+    text-align: left; /* Align text to the left for smaller screens */
+  }
+}
+
+/* Larger devices (default) */
+@media (min-width: 577px) {
+  .heading, .lead {
+    text-align: center; /* Center text for larger screens */
   }
 }

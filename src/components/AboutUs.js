@@ -78,7 +78,7 @@ const AboutUs = () => {
                 padding: '20px',
               }}
             >
-              <h1 className="heading mb-4">
+              <h1 className="heading text-center mb-4">
               About Us
 
               </h1>
@@ -189,13 +189,18 @@ const AboutUs = () => {
 
         {/* Team Section */}
         <div className="row justify-content-center text-center m-5 p-5">
-          <div className="col-12 col-md-8">
-            <h2 className="heading text-black">Team</h2>
-            <p className="lead text-black">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-            </p>
-          </div>
-        </div>
+  <div className="col-12 col-md-8 d-flex flex-column flex-md-row align-items-center">
+    <h2 className="heading text-black" style={{ flex: '1' }}>
+      Team
+    </h2>
+    <p className="lead text-black" style={{ flex: '1', marginTop: '0' }}>
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+    </p>
+  </div>
+</div>
+
+
+
 
         {/* Team Members */}
 
