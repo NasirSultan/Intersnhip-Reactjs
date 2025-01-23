@@ -188,15 +188,13 @@ const AboutUs = () => {
         </div>
 
         {/* Team Section */}
-        <div className="row justify-content-center text-center m-5 p-5">
-  <div className="col-12 col-md-8 d-flex flex-column flex-md-row align-items-center">
-    <h2 className="heading text-black" style={{ flex: '1' }}>
-      Team
-    </h2>
-    <p className="lead text-black" style={{ flex: '1', marginTop: '0' }}>
-      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-    </p>
-  </div>
+        <div className="d-flex flex-column align-items-start width-full">
+  <h2 className="heading text-black w-100 text-center">
+    Team
+  </h2>
+  <p className="lead text-black w-100" style={{ marginTop: '0' }}>
+    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+  </p>
 </div>
 
 
