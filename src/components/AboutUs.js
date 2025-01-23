@@ -94,12 +94,17 @@ const AboutUs = () => {
             <h2 className="featurette-heading fw-normal lh-1 text-center">
               Welcome to Travel & Tours
             </h2>
-            <p className="lead text-center">
+            <p className="lead text-center text-black">
               Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
             </p>
-            <p className="pt-4">
+            <p className="pt-4 text-black">
               A small river named Duden flows by their place and supplies it with the necessary regelialia.
             </p>
+            <p class="mt-5 text-left">
+  <a href="#" class="btn btn-primary uppercase px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 transition rounded">
+    Learn More
+  </a>
+</p>
           </div>
 
           <div className="col-12 col-md-6 order-md-1" data-aos="fade-right">
