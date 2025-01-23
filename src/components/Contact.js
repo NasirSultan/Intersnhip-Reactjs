@@ -249,7 +249,7 @@ const Contact = () => {
     <div className="row justify-content-center text-center pb-5">
       <div className="col-md-8">
         <h2
-          className="heading aos-init aos-animate mb-3"
+          className="heading aos-init text-center text-black aos-animate mb-3"
           data-aos="fade-up"
           style={{
             fontSize: "2.5rem",
@@ -259,7 +259,7 @@ const Contact = () => {
           Happy Customers
         </h2>
         <p
-          className="lead aos-init aos-animate"
+          className="lead aos-init aos-animate text-center text-black "
           data-aos="fade-up"
           data-aos-delay="100"
         >
