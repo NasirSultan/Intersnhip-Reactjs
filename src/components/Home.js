@@ -1,89 +1,93 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Header from './Header'; // Importing Header component
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Home = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+    });
+  }, []);
 
 
 
   return (
     <>
-      <section
+   <section
+  style={{
+    backgroundImage:
+      'url(https://nextvacay.com/wp-content/uploads/2022/07/KW-why-travel-is-important.jpg.webp)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    width: '100%',
+    aspectRatio: '16 / 9',
+    display: 'flex',
+    flexDirection: 'column',
+  }}
+>
+  <div
+    className="header-container"
+    style={{
+      padding: '10px 20px',
+    }}
+  >
+    <Header />
+  </div>
+
+  <div
+    className="d-flex justify-content-center align-items-center flex-column text-center"
+    data-aos="fade-up"
+    style={{
+      flex: 1,
+      padding: '20px',
+    }}
+  >
+    <div
+      className="col-12"
+      style={{
+        padding: '20px',
+      }}
+    >
+      <h1 className="heading text-center mb-4">
+        Travel &amp; Tours
+      </h1>
+
+      <p
+        className="sub-heading mb-2"
         style={{
-          backgroundImage:
-            'url(https://nextvacay.com/wp-content/uploads/2022/07/KW-why-travel-is-important.jpg.webp)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
-          backgroundRepeat: 'no-repeat',
-          width: '100%',
-          aspectRatio: '16 / 9',
-          display: 'flex',
-          flexDirection: 'column',
-        }}// Stack items vertically
-
+          fontSize: '1.25rem',
+          color: 'black',
+        }}
       >
-
-        <div
-          className="header-container"
+        A free template by{' '}
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          Colorlib
+        </a>
+        . Download and share!
+      </p>
+      <p className="pt-4">
+        <a
+          href="#/"
+          target="_blank"
+          className="btn uppercase btn-outline-light d-inline-block"
           style={{
-            padding: '10px 20px', // Add some spacing around the header
+            fontSize: '1rem',
           }}
         >
-          <Header />
-        </div>
+          Visit Colorlib
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
 
-
-        <div
-          className=" d-flex justify-content-center align-items-center flex-column text-center" data-aos="fade-up"
-          style={{
-            flex: 1, // Make this section take up remaining space
-            padding: '20px',
-          }}
-        >
-         
-            <div
-              className="col-12"
-              style={{
-                padding: '20px',
-              }}
-            >
-              <h1 className="heading text-center mb-4">
-                Travel &amp; Tours
-              </h1>
-
-              <p
-                className="sub-heading mb-2"
-                style={{
-                  fontSize: '1.25rem',
-                  color: 'black',
-                }}
-              >
-                A free template by{' '}
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Colorlib
-                </a>
-                . Download and share!
-              </p>
-              <p className="pt-4">
-                <a
-                  href="#/"
-                  target="_blank"
-                  className="btn uppercase btn-outline-light d-inline-block"
-                  style={{
-                    fontSize: '1rem',
-                  }}
-                >
-                  Visit Colorlib
-                </a>
-              </p>
-            </div>
-          
-        </div>
-      </section>
 
 
 
